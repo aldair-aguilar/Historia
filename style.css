@@ -1,0 +1,97 @@
+/* Paleta de colores */
+:root {
+    --russian-violet: #38023b;
+    --tropical-indigo: #a288e3;
+    --columbia-blue: #bbd5ed;
+    --mint-green: #cefdff;
+    --tea-green: #ccffcb;
+  }
+  
+  /* Estilos personalizados */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--mint-green);
+    color: var(--russian-violet);
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    background-color: var(--russian-violet);
+    animation: slideInTop 1s ease-out;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: var(--mint-green) !important;
+  }
+  
+  .hero {
+    background-color: var(--tropical-indigo);
+    color: var(--mint-green);
+    padding: 80px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+    background-color: var(--columbia-blue);
+    border: none;
+    transition: transform 0.2s;
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  .card-title {
+    color: var(--tropical-indigo);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: pulse 0.5s ease-in-out infinite alternate;
+  }
+  
+  .btn-primary {
+    background-color: var(--tropical-indigo);
+    border: none;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--tea-green);
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: var(--russian-violet);
+    color: var(--mint-green);
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInTop {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.03); }
+  }
+  
