@@ -5,116 +5,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corrientes de Psicología</title>
   <link rel="stylesheet" href="bostrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css"
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container-fluid">
+    <nav class="navbar bg-verde fixed-top">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">Psicología</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#inicio">Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-                          Corrientes Psicológicas
-                      </a>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#cognitivo">Cognitivo</a></li>
-                          <li><a class="dropdown-item" href="#conductual">Conductual</a></li>
-                          <li><a class="dropdown-item" href="#psicoanalisis">Psicoanálisis</a></li>
-                          <li><a class="dropdown-item" href="#gestalt">Gestal</a></li>
-                          <li><a class="dropdown-item" href="#humanista">Humanista</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#contacto">Contacto</a>
-                  </li>
-              </ul>
+        <a class="navbar-brand" href="#">
+          Psico Visión</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header bg-verde">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Todos los temas importantes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+          <div class="offcanvas-body bg-amarillo">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cognitivo">Enfoque Cognitivo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conductual">Enfoque Conductual</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#psicoanalisis">Psicoanálisis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gestalt">Gestalt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#humanista">Enfoque Humanista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-  </nav>
+    </nav>
+</div>
 
   <!-- Sección de inicio -->
-  <section id="inicio" class="py-5">
-      <div class="container text-center">
-          <h1>Bienvenidos al Proyecto de Corrientes Psicológicas</h1>
-          <p class="lead">Explora las distintas corrientes psicológicas para entender mejor sus enfoques y aplicaciones. Selecciona una corriente en el menú para obtener más información.</p>
-      </div>
+  <section id="inicio" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Bienvenidos al Proyecto sobre Corrientes Psicológicas</h2>
+      <hr class="my-4">
+      <p>Este proyecto tiene como objetivo divulgar las distintas corrientes de la psicología para una elección informada de los enfoques terapéuticos.</p>
+    </div>
   </section>
 
   <!-- Sección Cognitivo -->
-  <section id="cognitivo" class="py-5 bg-light">
-      <div class="container">
-          <h2 class="text-center">Enfoque Cognitivo</h2>
-          <p class="text-center">El enfoque cognitivo se centra en los procesos mentales como el pensamiento, la memoria y la percepción.</p>
-          <div class="text-center">
-              <img src="cognitivo.jpg" alt="Infografía Cognitivo" class="img-fluid">
-          </div>
+  <section id="cognitivo" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center">Enfoque Cognitivo</h2>
+      <p class="text-center">El enfoque cognitivo se centra en los procesos mentales como el pensamiento, la memoria y la percepción.</p>
+      <div class="text-center">
+        <img src="cognitivo.jpg" alt="Infografía Cognitivo" class="img-fluid" data-aos="zoom-in">
       </div>
+    </div>
   </section>
 
   <!-- Sección Conductual -->
-  <section id="conductual" class="py-5">
-      <div class="container">
-          <h2 class="text-center">Enfoque Conductual</h2>
-          <p class="text-center">El enfoque conductual se enfoca en el análisis del comportamiento observable y su relación con el entorno.</p>
-          <div class="text-center">
-              <img src="conductual.jpg" alt="Infografía Conductual" class="img-fluid">
-          </div>
+  <section id="conductual" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center">Enfoque Conductual</h2>
+      <p class="text-center">El enfoque conductual se enfoca en el análisis del comportamiento observable y su relación con el entorno.</p>
+      <div class="text-center">
+        <img src="conductual.jpg" alt="Infografía Conductual" class="img-fluid" data-aos="zoom-in">
       </div>
+    </div>
   </section>
 
   <!-- Sección Psicoanálisis -->
-  <section id="psicoanalisis" class="py-5 bg-light">
-      <div class="container">
-          <h2 class="text-center">Psicoanálisis</h2>
-          <p class="text-center">El psicoanálisis estudia el inconsciente y su influencia en el comportamiento humano.</p>
-          <div class="text-center">
-              <img src="psicoanalisis.jpg" alt="Infografía Psicoanálisis" class="img-fluid">
-          </div>
+  <section id="psicoanalisis" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center">Psicoanálisis</h2>
+      <p class="text-center">El psicoanálisis estudia el inconsciente y su influencia en el comportamiento humano.</p>
+      <div class="text-center">
+        <img src="psicoanalisis.jpg" alt="Infografía Psicoanálisis" class="img-fluid" data-aos="zoom-in">
       </div>
+    </div>
   </section>
 
   <!-- Sección Gestalt -->
-  <section id="gestal" class="py-5">
-      <div class="container">
-          <h2 class="text-center">Gestal</h2>
-          <p class="text-center">La terapia Gestalt busca comprender a la persona en su totalidad y promover el crecimiento personal.</p>
-          <div class="text-center">
-              <img src="gestalt.jpg" alt="Infografía Gestalt" class="img-fluid">
-          </div>
+  <section id="gestalt" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center">Gestalt</h2>
+      <p class="text-center">La terapia Gestalt busca comprender a la persona en su totalidad y promover el crecimiento personal.</p>
+      <div class="text-center">
+        <img src="gestalt.jpg" alt="Infografía Gestalt" class="img-fluid" data-aos="zoom-in">
       </div>
+    </div>
   </section>
 
   <!-- Sección Humanista -->
-  <section id="humanista" class="py-5 bg-light">
-      <div class="container">
-          <h2 class="text-center">Enfoque Humanista</h2>
-          <p class="text-center">El enfoque humanista se enfoca en el potencial humano y la autorrealización.</p>
-          <div class="text-center">
-              <img src="humanista.jpg" alt="Infografía Humanista" class="img-fluid">
-          </div>
+  <section id="humanista" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center">Enfoque Humanista</h2>
+      <p class="text-center">El enfoque humanista se enfoca en el potencial humano y la autorrealización.</p>
+      <div class="text-center">
+        <img src="humanista.jpg" alt="Infografía Humanista" class="img-fluid" data-aos="zoom-in">
       </div>
+    </div>
   </section>
 
-  <!-- Sección de contacto -->
-  <section id="contacto" class="py-5">
-      <div class="container text-center">
-          <h2>Contacto</h2>
-          <p class="lead">Para más información o dudas, contáctanos a través de nuestro correo: contacto@psicologia.com</p>
-      </div>
-  </section>
+  <!-- Botón Volver Arriba -->
+  <button id="scrollUp" class="btn btn-dark">↑</button>
 
-  <footer class="text-center py-3 bg-dark text-white">
-      <p>&copy; 2024 Corrientes Psicológicas</p>
-  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<!-- Footer de contacto -->
+<footer class="bg-verde text-center text-white py-4" id="contacto">
+  <div class="container">
+      <h5>Contacto</h5>
+      <p>Para más información, puedes encontrarnos en:</p>
+      <ul class="list-unstyled">
+          <li><a href="mailto:contacto@tudominio.com" class="text-white">contacto@tudominio.com</a></li>
+          <li><a href="https://www.instagram.com/psico.vision1" target="_blank" class="text-white">Instagram: @psico.vision1</a></li>
+      </ul>
+      <p>© 2024 Divine Software - Todos los derechos reservados</p>
+  </div>
+</footer>
+
 </html>
