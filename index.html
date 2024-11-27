@@ -8,94 +8,113 @@
   <link rel="stylesheet" href="style.css"
 </head>
 <body>
-
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Historia de la Psicología</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
-          <li class="nav-item"><a class="nav-link" href="#corrientes">Corrientes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#infografias">Infografías</a></li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Psicología</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                          Corrientes Psicológicas
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#cognitivo">Cognitivo</a></li>
+                          <li><a class="dropdown-item" href="#conductual">Conductual</a></li>
+                          <li><a class="dropdown-item" href="#psicoanalisis">Psicoanálisis</a></li>
+                          <li><a class="dropdown-item" href="#gestalt">Gestal</a></li>
+                          <li><a class="dropdown-item" href="#humanista">Humanista</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero fade-in">
-    <div class="container">
-      <h1 class="display-4">Conoce las Corrientes de Psicología</h1>
-      <p class="lead">Explora las diferentes corrientes psicológicas y elige la que mejor se adapte a tus necesidades.</p>
-      <a href="#corrientes" class="btn btn-primary">Descubre más</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-5 fade-in">
-    <div class="container">
-      <h2 class="text-center">Acerca de las Corrientes Psicológicas</h2>
-      <p class="text-center">La psicología ofrece una variedad de enfoques para comprender y mejorar la salud mental. Cada corriente aporta perspectivas y métodos únicos para abordar diversos problemas emocionales y psicológicos.</p>
-    </div>
-  </section>
-
-  <!-- Psychology Currents Section -->
-  <section id="corrientes" class="py-5 bg-light fade-in">
-    <div class="container">
-      <h2 class="text-center mb-5">Principales Corrientes de Psicología</h2>
-      <div class="row">
-        <!-- Cards for each corriente -->
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Psicoanálisis</h5>
-              <p class="card-text">Enfocado en el inconsciente, el psicoanálisis busca entender cómo las experiencias pasadas influyen en el comportamiento actual.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Conductismo</h5>
-              <p class="card-text">Se centra en los comportamientos observables y en cómo el entorno afecta la conducta a través de estímulos y respuestas.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Humanismo</h5>
-              <p class="card-text">Enfatiza el potencial humano y la autoexploración, promoviendo una relación de empatía y aceptación incondicional en la terapia.</p>
-            </div>
-          </div>
-        </div>
+  <!-- Sección de inicio -->
+  <section id="inicio" class="py-5">
+      <div class="container text-center">
+          <h1>Bienvenidos al Proyecto de Corrientes Psicológicas</h1>
+          <p class="lead">Explora las distintas corrientes psicológicas para entender mejor sus enfoques y aplicaciones. Selecciona una corriente en el menú para obtener más información.</p>
       </div>
-    </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contacto" class="py-5 fade-in">
-    <div class="container">
-      <h2 class="text-center">¿Interesado en Aprender Más?</h2>
-      <p class="text-center">Contacta con nosotros para recibir más información sobre cuál corriente psicológica podría ser la mejor para ti.</p>
-      <div class="text-center">
-        <a href="mailto:info@psicologiaejemplo.com" class="btn btn-outline-dark">Contáctanos</a>
+  <!-- Sección Cognitivo -->
+  <section id="cognitivo" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center">Enfoque Cognitivo</h2>
+          <p class="text-center">El enfoque cognitivo se centra en los procesos mentales como el pensamiento, la memoria y la percepción.</p>
+          <div class="text-center">
+              <img src="cognitivo.jpg" alt="Infografía Cognitivo" class="img-fluid">
+          </div>
       </div>
-    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Corrientes de Psicología. Todos los derechos reservados.</p>
-    </div>
+  <!-- Sección Conductual -->
+  <section id="conductual" class="py-5">
+      <div class="container">
+          <h2 class="text-center">Enfoque Conductual</h2>
+          <p class="text-center">El enfoque conductual se enfoca en el análisis del comportamiento observable y su relación con el entorno.</p>
+          <div class="text-center">
+              <img src="conductual.jpg" alt="Infografía Conductual" class="img-fluid">
+          </div>
+      </div>
+  </section>
+
+  <!-- Sección Psicoanálisis -->
+  <section id="psicoanalisis" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center">Psicoanálisis</h2>
+          <p class="text-center">El psicoanálisis estudia el inconsciente y su influencia en el comportamiento humano.</p>
+          <div class="text-center">
+              <img src="psicoanalisis.jpg" alt="Infografía Psicoanálisis" class="img-fluid">
+          </div>
+      </div>
+  </section>
+
+  <!-- Sección Gestalt -->
+  <section id="gestal" class="py-5">
+      <div class="container">
+          <h2 class="text-center">Gestal</h2>
+          <p class="text-center">La terapia Gestalt busca comprender a la persona en su totalidad y promover el crecimiento personal.</p>
+          <div class="text-center">
+              <img src="gestalt.jpg" alt="Infografía Gestalt" class="img-fluid">
+          </div>
+      </div>
+  </section>
+
+  <!-- Sección Humanista -->
+  <section id="humanista" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center">Enfoque Humanista</h2>
+          <p class="text-center">El enfoque humanista se enfoca en el potencial humano y la autorrealización.</p>
+          <div class="text-center">
+              <img src="humanista.jpg" alt="Infografía Humanista" class="img-fluid">
+          </div>
+      </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="py-5">
+      <div class="container text-center">
+          <h2>Contacto</h2>
+          <p class="lead">Para más información o dudas, contáctanos a través de nuestro correo: contacto@psicologia.com</p>
+      </div>
+  </section>
+
+  <footer class="text-center py-3 bg-dark text-white">
+      <p>&copy; 2024 Corrientes Psicológicas</p>
   </footer>
 
-  <script src="bostrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
